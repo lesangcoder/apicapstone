@@ -1,0 +1,14 @@
+.login{
+    padding: $pd-2 + 5;
+    h1 {
+        @include styleText($color-black-1, $fs-3 + 5, $fw-3);
+    }
+    .form-group {
+        label {
+            @include styleText($color-black-1, $fs-2, $fw-2);
+        }
+        span {
+            @include styleText($color-black-1, $fs-2, $fw-2);
+        }
+    }
+}

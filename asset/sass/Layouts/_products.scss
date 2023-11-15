@@ -1,0 +1,19 @@
+.cybershoes-product {
+    padding-bottom: $pd-6 + 5;
+    background-color: $color-white-1;
+    h1 {
+        color: $color-black-1;
+    }
+    .cybershoes-product-category {
+        .nav-item {
+            margin: 0 $mg-1;
+            .nav-link {
+                border-radius: $br-2;
+                &.active {
+                    @include styleButtonHover($color-primary-1, $border-1, $color-transparent);
+                    color: $color-white-1;
+                }
+            }
+        }
+    }
+}

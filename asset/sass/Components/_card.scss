@@ -1,0 +1,27 @@
+.cybershoes-card{
+    @include styleCard($color-white-1,$pd-3,$br-1,$mg-2);
+    padding-bottom: 0;
+    box-shadow: 5px 5px 20px $color-gray-2, -5px -5px 20px $color-gray-2;
+    width: auto;
+    text-align: center;
+    
+    .card-footer {
+        background-color: $color-organ-1;
+    }
+
+    img{
+        box-shadow: 2px 2px 20px $color-white-1, -2px -2px 20px $color-white-1;
+        background: linear-gradient(to right, $color-white-1, $color-white-1);
+    }
+    .card-title{
+        @include styleText($color-black-1,$fs-2,$fw-3);
+        color: $color-black-1;
+    }
+    .card-price{
+        @include styleText($color-black-1,$fs-2,$fw-3);
+    }
+    .card-rate{
+        color: $color-yellow-1;
+    }
+
+}

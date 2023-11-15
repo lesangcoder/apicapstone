@@ -1,0 +1,30 @@
+.cybershoes-carousel {
+    background-color: $color-white-1;
+    padding: $pd-4;
+    background-image: url(/asset/img/image6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1280px;
+    min-height: 530px;
+    top: 100px;
+    margin: auto;
+    .row {
+        margin-top: 50px;
+        align-items: center;
+
+        .row-img {
+            width: 120%;
+            height: 120%;
+        }
+        .row-content {
+            margin-left: 50px;
+            h1 {
+                @include styleText($color-black-1, $fs-5, $fw-3);
+                text-shadow: 2px 2px $color-gray-1;
+            }
+            h2 {
+                @include styleText($color-black-1, $fs-2, $fw-3);
+            }
+        }
+    }
+}

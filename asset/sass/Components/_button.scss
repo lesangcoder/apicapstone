@@ -1,0 +1,43 @@
+.cybershoes-carousel-btn {
+    @include styleButton($pd-4, $pd-3, $color-organ-1, transparent, $br-1);
+
+    @include styleText($color-white-1, $fs-2, $fw-2);
+
+    transition: all 0.5s;
+
+    &:hover {
+        @include styleButtonHover($color-primary-1, $border-1, $color-gray-2);
+        opacity: 0.95;
+    }
+}
+
+.cybershoes-card-btn {
+    font-size: $fs-2;
+    color: $color-black-1;
+    &:hover {
+        text-decoration: none
+    }
+}
+
+.cybershoes-category-btn {
+    @include styleButton($pd-5 + 2, $pd-1 + 5, $color-white-2, transparent, $br-2);
+    @include styleText($color-primary-1, $fs-2, $fw-2);
+    transition: all 0.5s;
+    &:hover {
+        @include styleButtonHover($color-primary-1, $border-1, $color-primary-1);
+        color: $color-white-1;
+    }
+    
+}
+
+.size-btn{
+    @include styleButton(0,0,$color-white-1,$border-1,$color-primary-1);
+    width: 40px;
+    height: 40px;
+    @include styleText($color-primary-1,$fs-1,$fw-2);
+
+    &:focus{
+        background-color: $color-primary-1;
+        color: $color-white-1;
+    }
+}
